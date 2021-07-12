@@ -8,16 +8,9 @@ source: https://panda.ime.usp.br/pensepy/static/pensepy/13-Classes/classesintro.
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
 
-    def __init__(self):
-        self.x = 0
-        self.y = 0
+    def __init__(self, initX, initY):
 
-p = Point()         # Instantiate an object of type Point
-q = Point()         # and make a second point
+        self.x = initX
+        self.y = initY
 
-print(Point)
-print(p)
-print(q)
-
-print(p is q)
-
+p = Point(7,6)
